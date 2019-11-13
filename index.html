@@ -3,11 +3,80 @@
 <head>
 	<title> A short presentation on accessibility </title>
 	<meta type="description" content="A Short Explanation of Web Accessibility"/>
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
 	<style>
-		img {width: 250px;}
-		aside {display:grid; grid-template-columns:1fr 1fr 1fr}
-		main {display:grid; max-width:800px;}
+		body {
+			color: #6646A4;
+			font-family:'Open Sans';
+		}
+
+		header, h3 {
+			text-align:center;
+		}
+
+		header {
+			margin-top:3rem;
+		}
+
+		nav {
+			text-align:center;
+			margin:0 auto;
+		}
+
+		ul {
+			list-style-type:none;
+			
+
+		}
+		hr {
+			max-width: 20%;
+		}
+		li {
+			display:inline;
+			padding: 1.5rem;
+		}
+
+		article {
+			
+			box-shadow: 0 35px 35px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+			padding:2rem;
+			margin:2rem;
+		}
+		
+		aside {
+			display: grid;
+			grid-template-columns:1fr;
+			max-width:75%;
+			margin: 0 auto;
+		
+		}
+
+		img {
+			max-width: 90%;
+			margin:0 auto;
+			padding: 5%;
+			border-radius:50%;
+		}
+
+		main {
+			display:grid; 
+			max-width:800px;
+			margin:0 auto;
+		}
+
+
+
+
+		@media only screen and (min-width:700px) {
+					
+						aside {display:grid; grid-template-columns:1fr 1fr 1fr}
+		
+			}
+
 	</style>
 	
 	
@@ -18,7 +87,7 @@
 <body>
 	<header id="top">
 		<h1> A Short Presentation on Accessibility </h1>
-		<h2> - Rachel Campbell </h2>
+		
 	</header>
 
 
@@ -37,6 +106,13 @@
 	<main id="main">
 
 		<article class="first">
+			<h3> What is accessibility? </h3><hr>
+			<p>Accessibility is making your website usable by as many people, in as many settings, with as many varying devices as possible. </p>
+			<p>We can be sure we are at the top of the accessibility game by following the guidelines instituted by W3C, the World Wide Web Consortium, in WCAG.</p>
+			<p>WCAG stands for Web Content Accessibility Guidelines...</p>
+			<p>These guidelines make sure our technologies are Perceivable, Operable, Understandable, and Robust - for as many users as possible. </p>
+			<p>We know accessibility is important for those of us with physical, auditory, visual, or other disabilities. </p>
+			<p>What you may <em>not</em> know is how following accessibility guidelines is crucial to make sure <strong>all</strong> users are able to consume your information. </p>
 
 		</article>
 
@@ -57,7 +133,7 @@
 
 	<aside>
 		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER(1).jpg">
-		<img alt="" src="">
+		<img alt="Three small orange pumpkins on a wet wooden porch stair" src="00100lPORTRAIT_00100_BURST20191027135421397_COVER.jpg">
 		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER.jpg"> 
 	</aside>
 
