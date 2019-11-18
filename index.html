@@ -14,6 +14,15 @@
 			font-family:'Open Sans';
 		}
 
+		button {
+			padding:1rem;
+			font-size:1rem;
+			border-radius:10px;
+			background-color:lightgrey;
+			color:black;
+			cursor:pointer;
+		}
+
 		header, h3 {
 			text-align:center;
 		}
@@ -32,6 +41,21 @@
 			
 
 		}
+
+		footer ul {
+			list-style-type:none;
+		}
+		footer {
+			text-align:center;
+			margin:0 auto;
+		}
+
+		footer li {
+			display:inline;
+			padding:1.5rem;
+			text-decoration-style:none;
+			text-decoration:none;
+		}
 		hr {
 			max-width: 20%;
 		}
@@ -39,6 +63,13 @@
 			display:inline;
 			padding: 1.5rem;
 			text-decoration-style: none;
+		}
+
+		.backToTop {
+			position:fixed;
+			bottom:25;
+			right:100;
+
 		}
 
 		article {
@@ -86,19 +117,19 @@
 
 
 <body>
-	<header id="top">
-		<h1> A Short Presentation on Accessibility </h1>
-		
-	</header>
+	
 
 
 
 	<nav>
+		<header id="top">
+		<h1>Accessibility</h1>
+		
+		</header>
 		<ul>
 			<li><a href="#top">Top</a></li>
 			<li><a href="#main">Main Content</a></li>
-			<li><a href="#footer">Footer</a></li>
-			<li><a href="/additionalresources.html">Additional Resources</a></li>
+			<li><a href="#footer">Additional Resources</a></li>
 		</ul>
 	</nav>
 
@@ -124,17 +155,18 @@
 		<article class="first" id="first">
 			<h3> What is accessibility? </h3><hr>
 			<p>Accessibility is making your website usable by as many people, in as many settings, with as many varying devices as possible. </p>
-			<p>We can be sure we are at the top of the accessibility game by following the guidelines instituted by W3C, the World Wide Web Consortium, in WCAG.</p>
-			<p>WCAG stands for Web Content Accessibility Guidelines...</p>
-			<p>These guidelines make sure our technologies are Perceivable, Operable, Understandable, and Robust - for as many users as possible. </p>
 			<p>We know accessibility is important for those of us with physical, auditory, visual, or other disabilities. </p>
 			<p>What you may <em>not</em> know is how following accessibility guidelines is crucial to make sure <strong>all</strong> users are able to consume your information. </p>
+
+			<p>We can be sure we are at the top of the accessibility game by following the guidelines instituted by W3C, the World Wide Web Consortium, in WCAG (Web Content Accessibility Guidelines).</p>
+			<p>These guidelines make sure our technologies are Perceivable, Operable, Understandable, and Robust - for as many users as possible. </p>
+		
 
 		</article>
 
 
 		<article class="second" id="second">
-			<h3> In what kinds of situations do people end up using assistive technologies? </h3>
+			<h3> In what kinds of situations do people end up using assistive technologies? </h3><hr>
 			<p>Most commonly, accessibility refers to making the web accessible to individuals with disabilities. These can be auditory, cognitive, neurological, physical, speech, or visual disabilities. </p>
 			<p>However. Web accessibility also assists able-bodied, neurotypical individuals in certain situations such as...</p>
 			<ul>
@@ -148,7 +180,7 @@
 
 
 		<article class="third" id="third">
-			<h3>How are assistive technologies using our websites?</h3>
+			<h3>How are assistive technologies using our websites?</h3><hr>
 			<p>Screen readers allow people to navigate websites in a variety of ways. </p>
 			<p>How they get around: </p>
 			<ul>
@@ -162,7 +194,7 @@
 
 		<article class="fourth" id="fourth">
 
-			<h3>Perhaps the most important question, though, is <strong>how can we make sure our websites are fully accessible?</strong></h3>
+			<h3>Perhaps the most important question, though, is <strong>how can we make sure our websites are fully accessible?</strong></h3><hr>
 
 			<div class="grid">
 				<div>
@@ -194,7 +226,9 @@
 
 
 
-
+	<div role="navigation" class="backToTop">
+		<button><a href="#top">Back to Top</a></button>
+	</div>
 
 
 
