@@ -27,7 +27,7 @@
 			margin:0 auto;
 		}
 
-		ul {
+		nav ul {
 			list-style-type:none;
 			
 
@@ -35,9 +35,10 @@
 		hr {
 			max-width: 20%;
 		}
-		li {
+		nav li {
 			display:inline;
 			padding: 1.5rem;
+			text-decoration-style: none;
 		}
 
 		article {
@@ -106,6 +107,21 @@
 	<main id="main">
 
 		<article class="first">
+			<h3><a href="#first"> What is accessibility? </a></h3><hr>
+			<h3><a href="#second">In what kinds of situations do people end up using assistive technologies? </a></h3><hr>
+			<h3><a href="#third">How are assistive technologies using our websites?</a></h3> <hr>
+			<h3><a href="#fourth">How can we make sure our websites are fully accessible?</a></h3>
+
+
+		</article>
+
+	<aside>
+		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER(1).jpg">
+		<img alt="Three small orange pumpkins on a wet wooden porch stair" src="00100lPORTRAIT_00100_BURST20191027135421397_COVER.jpg">
+		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER.jpg"> 
+	</aside>
+
+		<article class="first" id="first">
 			<h3> What is accessibility? </h3><hr>
 			<p>Accessibility is making your website usable by as many people, in as many settings, with as many varying devices as possible. </p>
 			<p>We can be sure we are at the top of the accessibility game by following the guidelines instituted by W3C, the World Wide Web Consortium, in WCAG.</p>
@@ -117,7 +133,7 @@
 		</article>
 
 
-		<article class="second">
+		<article class="second" id="second">
 			<h3> In what kinds of situations do people end up using assistive technologies? </h3>
 			<p>Most commonly, accessibility refers to making the web accessible to individuals with disabilities. These can be auditory, cognitive, neurological, physical, speech, or visual disabilities. </p>
 			<p>However. Web accessibility also assists able-bodied, neurotypical individuals in certain situations such as...</p>
@@ -131,7 +147,7 @@
 		</article>
 
 
-		<article class="third">
+		<article class="third" id="third">
 			<h3>How are assistive technologies using our websites?</h3>
 			<p>Screen readers allow people to navigate websites in a variety of ways. </p>
 			<p>How they get around: </p>
@@ -144,7 +160,7 @@
 
 		</article>
 
-		<article class="fourth">
+		<article class="fourth" id="fourth">
 
 			<h3>Perhaps the most important question, though, is <strong>how can we make sure our websites are fully accessible?</strong></h3>
 
@@ -153,11 +169,16 @@
 					<h3>HTML Accessibility:</h3>
 					<p>Make sure you are using HTML elements for their intended purpose. Replace 'div' elements with something more specific - perhaps 'nav', 'aside', 'article', 'footer', 'header', etc...</p>
 					<p><strong>Assistive technologies use these elements to streamline a user's navigation process. Using a 'nav' element allows the user to skip over the navigation menu, rather than needing to repeat the same lines over and over. </strong></p>
+					<p>Alt tags... the lowest hanging fruit of accessibility! Alt tags are what screen readers speak aloud to our users. Having descriptive alt tags is important. Without them, many screen readers will announce the entire URL.</p>
+					<p>Make larger clickable areas.</p>
+					<p>ARIA roles - these are optional. <em>ARIA roles should only be used if you are otherwise unable to use a specific, pre-defined HTML element.</em></p>
 				</div>
 
 				<div>
 					<h3>CSS Accessibility</h3>
-					<p>Placeholder Text</p>
+					<p><strong>Color contrast</strong> - making sure your website has discernable coloration is crucial to its usability. <em>Ever struggled to read a website from your smartphone on a sunny day? Having proper color contrast on your web page makes it easier to read your page through screen glare.</em></p>
+					<p>Make sure anything emphasized in a specific color is <em>also</em> emphasized in another way - like adding an asterisk as well.</p>
+					<p>As a rule, leave default element behavior alone. For example: mouse pointer hand, visited link color changes, link underlining, etc. This consistency across web pages is helpful to a user's ability to quickly understand your site.</p>
 
 				</div>
 
@@ -174,11 +195,6 @@
 
 
 
-	<aside>
-		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER(1).jpg">
-		<img alt="Three small orange pumpkins on a wet wooden porch stair" src="00100lPORTRAIT_00100_BURST20191027135421397_COVER.jpg">
-		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER.jpg"> 
-	</aside>
 
 
 
