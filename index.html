@@ -35,14 +35,11 @@
 		nav {
 			text-align:center;
 			margin:0 auto;
-		}
-
-		nav ul {
-			list-style-type:none;
-			padding:0;
+			max-width:800px;
 
 		}
 
+		
 		footer ul {
 			list-style-type:none;
 		}
@@ -60,11 +57,7 @@
 		hr {
 			max-width: 20%;
 		}
-		nav li {
-			display:inline;
-			padding: 1rem;
-			
-		}
+		
 
 		.backToTop {
 			position:fixed;
@@ -123,36 +116,37 @@
 
 
 
-	<nav>
+	
 		<header id="top">
 		<h1>Accessibility</h1>
 		
 		</header>
-		<ul>
-			<li><a href="#top">Top</a></li>
-			<li><a href="#main">Main Content</a></li>
-			<li><a href="#footer">Additional Resources</a></li>
-		</ul>
-	</nav>
+		
+	
 
 
 
-	<main id="main">
-
+	
+<nav>
 		<article class="first">
 			<h3><a href="#first"> What is accessibility? </a></h3><hr>
-			<h3><a href="#second">In what kinds of situations do people end up using assistive technologies? </a></h3><hr>
+			<h3><a href="#second">Who uses assistive technologies? </a></h3><hr>
 			<h3><a href="#third">How are assistive technologies using our websites?</a></h3> <hr>
 			<h3><a href="#fourth">How can we make sure our websites are fully accessible?</a></h3>
-
+</nav>
 
 		</article>
 
+
+	
 	<aside>
 		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER(1).jpg">
 		<img alt="Three small orange pumpkins on a wet wooden porch stair" src="00100lPORTRAIT_00100_BURST20191027135421397_COVER.jpg">
 		<img alt="Brick building covered in red, yellow, and green ivy" src="00000IMG_00000_BURST20191028151833805_COVER.jpg"> 
 	</aside>
+
+
+	<main id="main">
 		<div class="sideBySide">
 		<article class="first" id="first">
 			<h3> What is accessibility? </h3><hr>
@@ -160,16 +154,12 @@
 			<p>We know accessibility is important for those of us with physical, auditory, visual, or other disabilities. </p>
 			<p>What you may <em>not</em> know is how following accessibility guidelines is crucial to make sure <strong>all</strong> users are able to consume your information. </p>
 
-			<p>We can be sure we are at the top of the accessibility game by following the guidelines instituted by W3C, the World Wide Web Consortium, in WCAG (Web Content Accessibility Guidelines).</p>
-			<p>These guidelines make sure our technologies are Perceivable, Operable, Understandable, and Robust - for as many users as possible. </p>
-		
-
 		</article>
 
 
 		<article class="second" id="second">
-			<h3> In what kinds of situations do people end up using assistive technologies? </h3><hr>
-			<p>Most commonly, accessibility refers to making the web accessible to individuals with disabilities. These can be auditory, cognitive, neurological, physical, speech, or visual disabilities. </p>
+			<h3> Who uses assistive technologies? </h3><hr>
+			<p>Most commonly, accessibility works for disabled users. These disabilities can be auditory, cognitive, neurological, physical, speech, or visual. </p>
 			<p>However. Web accessibility also assists able-bodied, neurotypical individuals in certain situations such as...</p>
 			<ul>
 				<li>People using mobile phones, smart TVs, or other devices with small screens or unusual input modes </li>
@@ -177,7 +167,8 @@
 				<li>People with temporary ability hindrances such as medication induced impairment, broken limbs, missing glasses or hearing aids </li> 
 				<li>Situational limitations like bright sunlight or a quiet library with no headphones... </li>
 			</ul>
-			<p><a href="https://www.youtube.com/watch?v=rsglR8Y26jU">Click here to see someone using assistive technology to navigate the web</a></p>
+			<p><a href="https://www.youtube.com/watch?v=7Rs3YpsnfoI">For more information regarding assistive technology use, click this link.</a></p>
+			
 		</article>
 
 
@@ -185,35 +176,44 @@
 			<h3>How are assistive technologies using our websites?</h3><hr>
 			<p>Screen readers allow people to navigate websites in a variety of ways. </p>
 			<p>How they get around: </p>
+
 			<ul>
-				<li>“Focusable items” like links (href), buttons, input items, textarea items, objects, select items
+				<li>“Focusable items” like links (href), buttons, input items, etc
 					<ul> <li> Focusable items include links (href) and buttons by default, but also include any item that includes a “tabindex” attribute </li> </ul>
-				<li>Characters, words, objects, groups</li>
+				</li>
+				
 				<li>Next heading, next list, next list item, next media, next list item, next table, etc</li>
+
+				<li>Characters, words, objects, groups</li>
+
 			</ul>
-			<p><a href="https://www.youtube.com/watch?v=7Rs3YpsnfoI">For more information regarding assistive technology use, click this link.</a></p>
+
+			<p><a href="https://www.youtube.com/watch?v=rsglR8Y26jU">Click here to see how assistive technologies allow visually impaired users to navigate the web.</a></p>
+			
 
 		</article>
 
 		<article class="fourth" id="fourth">
 
-			<h3>Perhaps the most important question, though, is <strong>how can we make sure our websites are fully accessible?</strong></h3><hr>
+			<h3><strong>How can we make sure our websites are fully accessible?</strong></h3><hr>
 
 			<div class="grid">
 				<div>
 					<h3>HTML Accessibility:</h3>
 					<p>Make sure you are using HTML elements for their intended purpose. Replace 'div' elements with something more specific - perhaps 'nav', 'aside', 'article', 'footer', 'header', etc...</p>
-					<p><strong>Assistive technologies use these elements to streamline a user's navigation process. Using a 'nav' element allows the user to skip over the navigation menu, rather than needing to repeat the same lines over and over. </strong></p>
-					<p>Alt tags... the lowest hanging fruit of accessibility! Alt tags are what screen readers speak aloud to our users. Having descriptive alt tags is important. Without them, many screen readers will announce the entire URL.</p>
+					<p><strong>Assistive technologies use these elements to streamline a user's navigation process. Using a 'nav' element allows the user to skip over the navigation menu as needed. </strong></p>
+					<p>Image 'alt' attributes are what screen readers speak aloud to our users. Having descriptive alt tags is important. <strong> NOTE: In the absence of an alt tag, many screen readers will read the URL to the user.</strong></p>
 					<p>Make larger clickable areas.</p>
-					<p>ARIA roles - these are optional. <em>ARIA roles should only be used if you are otherwise unable to use a specific, pre-defined HTML element.</em></p>
+					<p><abbr title="Accessible Rich Internet Applications">ARIA</abbr> roles - these are optional. <em>ARIA roles should only be used if you are otherwise unable to use a specific, pre-defined HTML element.</em></p>
 				</div>
 
 				<div>
 					<h3>CSS Accessibility</h3>
-					<p><strong>Color contrast</strong> - making sure your website has discernable coloration is crucial to its usability. <em>Ever struggled to read a website from your smartphone on a sunny day? Having proper color contrast on your web page makes it easier to read your page through screen glare.</em></p>
-					<p>Make sure anything emphasized in a specific color is <em>also</em> emphasized in another way - like adding an asterisk as well.</p>
-					<p>As a rule, leave default element behavior alone. For example: mouse pointer hand, visited link color changes, link underlining, etc. This consistency across web pages is helpful to a user's ability to quickly understand your site.</p>
+					<p><strong>Color contrast</strong> - making sure your website has discernable coloration is crucial to its usability. <em><!-- Ever struggled to read a website from your smartphone on a sunny day? Having proper color contrast on your web page also makes it easier to read your page through screen glare. --></em></p>
+					<p>Make sure anything emphasized with color is emphasized in another way as well - with a symbol, for example.</p>
+					<p>As a rule, leave default element behavior alone.<!--  For example: mouse pointer hand, visited link color changes, link underlining, etc. This consistency across web pages is helpful to a user's ability to quickly understand your site -->.</p>
+
+
 
 				</div>
 
